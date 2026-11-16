@@ -1,3 +1,5 @@
+#Vaccume Cleaner Simple Reflex Agent
+
 # Create the environment.
 environment = {'A': 'Dirty', 'B': 'Dirty'}
 
