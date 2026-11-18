@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date and Time</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .box {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Current Date & Time</h2>
+
+        <?php
+        date_default_timezone_set("Asia/Kolkata");
+
+        echo "<p>Date: " . date("d-m-Y") . "</p>";
+        echo "<p>Day: " . date("l") . "</p>";
+        ?>
+
+        <p>Time: <span id="clock"></span></p>
+    </div>
+
+    <script>
+        function showTime() {
+            var now = new Date();
+
+            document.getElementById("clock").innerHTML =
+            now.toLocaleTimeString("en-IN", {
+                timeZone: "Asia/Kolkata"
+            });
+        }
+
+        setInterval(showTime, 1000);
+        showTime();
+    </script>
+</body>
+</html>

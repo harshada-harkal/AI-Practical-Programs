@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Names</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        p {
+            color: green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Student Names</h2>
+
+    <?php
+        $names = array("Rahul", "Priya", "Amit");
+
+        foreach ($names as $name) {
+            echo "<p>" . $name . "</p>";
+        }
+    ?>
+
+</div>
+
+</body>
+</html>

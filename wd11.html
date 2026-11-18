@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .box {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>String Manipulation</h2>
+
+    <?php
+        $str = "Hello";
+
+        echo "<p>String: " . $str . "</p>";
+        echo "<p>Length: " . strlen($str) . "</p>";
+        echo "<p>Reverse: " . strrev($str) . "</p>";
+        echo "<p>Uppercase: " . strtoupper($str) . "</p>";
+    ?>
+
+</div>
+
+</body>
+</html>
